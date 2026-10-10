@@ -13,7 +13,7 @@ services:
       - key: APP_URL
         value: https://skillsetu-ai.onrender.com
       - key: CORS_ORIGIN
-        value: https://skillsetu-ai.onrender.com,https://melodic-duckanoo-07f7d2.netlify.app
+        value: https://skillsetu-ai.onrender.com,https://*.netlify.app,https://aindrop-075402.netlify.app,https://*.vercel.app
       - key: NVIDIA_MODEL
         value: meta/llama-3.2-11b-vision-instruct
       - key: NVIDIA_BASE_URL
