@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: skillsetu-ai
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: APP_URL
+        value: https://skillsetu-ai.onrender.com
+      - key: CORS_ORIGIN
+        value: https://skillsetu-ai.onrender.com,https://melodic-duckanoo-07f7d2.netlify.app
+      - key: NVIDIA_MODEL
+        value: meta/llama-3.2-11b-vision-instruct
+      - key: NVIDIA_BASE_URL
+        value: https://integrate.api.nvidia.com/v1
+      - key: NVIDIA_API_KEY
+        sync: false
